@@ -1,0 +1,110 @@
+body {
+  height: 100vh;
+  background: linear-gradient(#d6afff41, #99daff50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+h2 {
+  font-family: 'Poiret One', cursive;
+  color: rgb(36, 153, 173);
+  padding: 20px;
+  text-align: center;
+}
+
+.pinpad {
+  background-color: white;
+  height: 550px;
+  width: 350px;
+  border-radius: 1em;
+  box-shadow: 12px 15px 48px -19px rgba(0,0,0,0.75); 
+}
+
+
+
+.input-field {
+  padding: 10px;
+  font-family: 'Poiret One', cursive;
+}
+
+button {
+  background: none;
+  border: none;
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+  font-size: 1.8em;
+  font-family: 'Poiret One', cursive;
+  color:  #2499ad;
+}
+
+button:active {
+  background-color: #d6afff41;
+}
+
+button {
+  transition: background-color 0.3s;
+}
+
+button:focus {
+  outline: none;
+}
+
+.buttons {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-auto-rows:minmax(5em, auto);
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 5px;
+}
+
+.buttons > button:nth-child(1) {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+.buttons > button:nth-child(11) {
+  grid-column: 3/4;
+  grid-row: 4/5;
+}
+
+circle {
+  fill: rgb(36, 153, 173);
+  stroke: none;
+}
+
+line{
+  stroke: #2499ad;
+  stroke-width: 1
+}
+
+text {
+  fill:rgb(36, 153, 173);
+  font-size: 2em
+}
+
+image {
+  height: 35px;
+  width: auto;
+}
+
+.message {
+  display: fixed;
+  height: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1em;
+  color:  #4c7892fa;
+  opacity: 1;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+      background:white;
+  }
+  .pinpad {
+    box-shadow: none;
+  }
+}
